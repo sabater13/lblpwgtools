@@ -2,3 +2,6 @@
 .lock-waf*
 .waf*
 tmp
+
+CAFAna/install
+CAFAna/numuCC/Plots
