@@ -321,7 +321,7 @@ void numuCCsample(){
     const Cut kSigMuonNotTrueMuon = kSignalSelection && kMuonCandIsNotTrueMuon;
 
     // Shorthand for the reco-interaction loader and the true-signal denominator
-    auto reco = [&]() { return loader.Interactions(RecoType::kDLP); };
+    auto reco = [&]() -> decltype(auto) { return loader.Interactions(RecoType::kDLP); };
     const TruthCut& kTrueSignal = kTrueNumuCCContainedNDLArAndEscapeToTMS;
 
     // =========================================================================
